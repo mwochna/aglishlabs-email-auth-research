@@ -1,0 +1,99 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# --- CONFIG ---
+FROM_ADDR="me@aglishlabs.email"
+SMTP_HOST="box.aglishlabs.email" 
+SMTP_PORT=587
+SMTP_USER="$FROM_ADDR"
+SMTP_PASS="${SMTP_PASS}"
+
+RECIP_FILE="./recipients.csv"
+OUT_CSV="./send_log.csv"
+REGIME="${1:-none}"
+COUNT="${2:-5}"
+RATE_SLEEP="${3:-1}"
+
+# --- HEADER TOKEN ---
+RUN_ID="$(date -u +%Y%m%dT%H%M)_${REGIME}"
+echo "=== Starting Test Run: $RUN_ID ==="
+echo "Regime: $REGIME | Emails per recipient: $COUNT"
+
+# --- INIT LOG FILE WITH CLEAN HEADER ---
+cat > "$OUT_CSV" << 'EOF'
+timestamp,regime,receiver,provider,email_number,subject,smtp_status,delivery_status,response_time
+EOF
+
+# --- SEND LOOP ---
+total_sent=0
+while IFS=, read -r RCPT PROVIDER; do
+    # Skip empty lines and header
+    [[ -z "$RCPT" || "$RCPT" == "email" || "$RCPT" == "recipient" ]] && continue
+    
+    RCPT=$(echo "$RCPT" | tr -d '\r' | xargs)
+    PROVIDER=$(echo "$PROVIDER" | tr -d '\r' | xargs)
+    
+    echo "📧 Testing $PROVIDER: $RCPT"
+    
+    for ((n=1; n<=COUNT; n++)); do
+        SUBJ="Legitymate Test - $REGIME - $PROVIDER - $RUN_ID"
+        
+        # Start timing
+        START_TIME=$(date +%s.%N)
+        
+        # Send with Swaks and capture full output
+        RES=$(swaks \
+            --server "$SMTP_HOST:$SMTP_PORT" \
+            --auth LOGIN \
+            --auth-user "$SMTP_USER" \
+            --auth-password "$SMTP_PASS" \
+            --tls \
+            --from "$FROM_ADDR" \
+            --to "$RCPT" \
+            --header "Subject: $SUBJ" \
+            --body 'Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John' \
+            --timeout 30 \
+            2>&1)
+        
+        # Calculate response time
+        END_TIME=$(date +%s.%N)
+        RESPONSE_TIME=$(echo "$END_TIME - $START_TIME" | bc | xargs printf "%.2f")
+        
+        # Extract and categorize SMTP status
+        SMTP_CODE=$(echo "$RES" | grep -oE '\b[245][0-9][0-9]\b' | tail -n1 || echo "000")
+        
+        # Determine delivery status
+        if [[ "$SMTP_CODE" =~ ^2[0-9][0-9] ]]; then
+            DELIVERY_STATUS="ACCEPTED"
+        elif [[ "$SMTP_CODE" =~ ^4[0-9][0-9] ]]; then
+            DELIVERY_STATUS="TEMPORARY_FAILURE"
+        elif [[ "$SMTP_CODE" =~ ^5[0-9][0-9] ]]; then
+            DELIVERY_STATUS="REJECTED"
+        else
+            DELIVERY_STATUS="UNKNOWN"
+        fi
+        
+        # Log to CSV (clean, tabular format)
+        TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+        echo "$TS,$REGIME,$RCPT,$PROVIDER,$n,\"$SUBJ\",$SMTP_CODE,$DELIVERY_STATUS,$RESPONSE_TIME" >> "$OUT_CSV"
+        
+        # Show progress
+        echo "  → Email $n: $SMTP_CODE ($DELIVERY_STATUS) in ${RESPONSE_TIME}s"
+        
+        total_sent=$((total_sent + 1))
+        sleep "$RATE_SLEEP"
+    done
+    echo "  ✅ Completed $COUNT emails to $PROVIDER"
+    echo ""
+    
+done < "$RECIP_FILE"
+
+echo "=========================================="
+echo "🎯 TEST RUN COMPLETED: $RUN_ID"
+echo "📊 Total emails sent: $total_sent"
+echo "💾 Results saved to: $OUT_CSV"
+echo "=========================================="

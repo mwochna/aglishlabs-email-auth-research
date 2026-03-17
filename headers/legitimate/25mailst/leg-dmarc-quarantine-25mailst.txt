@@ -1,0 +1,52 @@
+Return-Path: <SRS0=1lkh=57=aglishlabs.email=me@srs.mail-10005203.25mail.st>
+Delivered-To: msc@dmarclabs.org
+Received: from mail-10005203.25mail.st
+	by mail-10005203.25mail.st with LMTP
+	id gAxJEVD7ImnGiBcAOCv7dg
+	(envelope-from <SRS0=1lkh=57=aglishlabs.email=me@srs.mail-10005203.25mail.st>)
+	for <msc@dmarclabs.org>; Sun, 23 Nov 2025 12:17:20 +0000
+X-Original-To: msc@dmarclabs.org
+DMARC-Filter: OpenDMARC Filter v1.4.2 mail-10005203.25mail.st 2A855CD5A
+Authentication-Results: opendmarc.mail-10005203.25mail.st; dmarc=pass (p=quarantine dis=none) header.from=aglishlabs.email
+Authentication-Results: opendmarc.mail-10005203.25mail.st; spf=pass smtp.mailfrom=aglishlabs.email
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail-10005203.25mail.st 2A855CD5A
+Authentication-Results: mail-10005203.25mail.st;
+	dkim=pass (2048-bit key; unprotected) header.d=aglishlabs.email header.i=@aglishlabs.email header.a=rsa-sha256 header.s=mail header.b=TPADAv/i;
+	dkim-atps=neutral
+Received: from box.aglishlabs.email (box.aglishlabs.email [185.17.255.13])
+	by mail-10005203.25mail.st (Postfix) with ESMTPS id 2A855CD5A
+	for <msc@dmarclabs.org>; Sun, 23 Nov 2025 12:17:20 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email;
+	s=mail; t=1763900239;
+	bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+	h=Date:To:From:Subject:From;
+	b=TPADAv/iFH1RlfIVWZAuNFCVVnUN9ujQV+YXZP37onvL7lWWsLPpq72vSyvfYI+UF
+	 LxSFCt1vRT4GSXcNyCh2JajsVwEhHIabVL0t1I8ocaB1inuVEN3oKJaDtrcihxaOp2
+	 PKH58wQ4AuLqB4xVb4r7PnIl8kymW9K6qeU3iXVhmjg1VyPQmVi100n6/KlUC/Hwv+
+	 rpg1MjjT8ahqOJ8BfqMsDYR/zwGuNxFXwIq987wUwGa3k5OnqyuOEtfeAiJi0Y3Wpj
+	 Fb4uEmbwyWmJU1jiBaQYCEyKwkQQLckvZnzaokRk9hCOJX+veiVBoF8Ca+QM32f48y
+	 8h80ahwNuC27w==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by box.aglishlabs.email (Postfix) with ESMTPSA id C7CC828E9
+	for <msc@dmarclabs.org>; Sun, 23 Nov 2025 12:17:19 +0000 (GMT)
+Date: Sun, 23 Nov 2025 12:17:19 +0000
+To: msc@dmarclabs.org
+From: me@aglishlabs.email
+Subject: Legitymate Test - dmarc-quarantine - 25mail - 20251123T1213_dmarc-quarantine
+Message-Id: <20251123121719.1267580@pop-os>
+X-Spam-Status: No, score=-0.2 required=5.0 tests=DKIM_SIGNED,DKIM_VALID,
+	DKIM_VALID_AU,DKIM_VALID_EF,DMARC_PASS,SPF_HELO_NONE,SPF_PASS
+	autolearn=ham autolearn_force=no version=4.0.1
+X-Spam-Checker-Version: SpamAssassin 4.0.1 (2024-03-25) on
+	mail-10005203.25mail.st
+X-Virus-Scanned: clamav-milter 1.0.7 at mail-10005203.25mail.st
+X-Virus-Status: Clean
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John

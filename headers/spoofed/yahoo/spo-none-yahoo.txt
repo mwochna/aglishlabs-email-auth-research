@@ -1,0 +1,49 @@
+Received: from 10.197.33.11
+ by atlas114.free.mail.bf1.yahoo.com pod-id NONE with HTTPS; Sat, 22 Nov 2025 18:34:11 +0000
+Return-Path: <me@aglishlabs.email>
+X-Originating-Ip: [185.17.255.14]
+Received-SPF: none (domain of aglishlabs.email does not designate permitted sender hosts)
+Authentication-Results: atlas114.free.mail.bf1.yahoo.com;
+ dkim=unknown;
+ spf=none smtp.mailfrom=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+ dmarc=unknown header.from=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+X-Apparently-To: aglishlabs_msc@yahoo.com; Sat, 22 Nov 2025 18:34:11 +0000
+X-YMailISG: TJlnAAUWLDsphNTTAKStQd96y659TAZ27aoPn4bywKvq1La4
+ zn2E0WlKPYm9AV6r9Gy.6SJeVZOHuEay7ALNFTweLkcoNdunbMMO2TnTWOEe
+ fqEb6XWE79YNqF4rcJSQ.9JEmgp5WNl1EaVnmYJmijani.W6gNpGRfrl8Vz4
+ G8Ec7EUPhjPeorOL7TBCQPT_Az34ICoJyGOnKotx76YvrHpNYgzwucKN_xbC
+ vx.S_0Ij7E4C9QqqBGIkAHoN9rl3jBikL4B8Xi2iKaXq6E9tifiKLhDYt5dG
+ XsCGy5UrMuuHaRBP1uo5LFkL_sNcD.oN_3ER2KuMcMskwdkSsLGsUjvoVCNI
+ btg8q7EXw7ol8PkjEUDRqZ.LBoEJSglXbjOWp244wWEl_KxuzkCgAJFppv5m
+ BnEZZLVtylPJDhNQzFo3RFOv8CA4VOcvrJeR0XkkdLaxH51SkThpelEXmhvd
+ erFPtLklOnTPsXxrhz8DBpEuxrB4P7OvZBCnSlDI5uvgzltp0mhfUvORao_7
+ ikX1B0ajFgrVpTFC8449Qc1pOO4FuSy13ANONCXl1iLUDiFrRxYlNdFjIZCU
+ Z00D_Nk7LXLqdzT5ckgRngsLPlkZ9VPrOyq3v_ZdjMtpwQfWyfIjvQrisWe8
+ tKFd6ZuWFVIe0XhaZWWB04Oswwzfi7LInL_gnuU76U5dIjyh.1ZStRexHRUy
+ hIYz5Zp93pYsEU2z0p9rEJhM7oxTtdVXWLxbN156SjBmVuELJUYKu3osYYy8
+ E7Wn0US2iUr0LuFiSNfEzLtMoJGaSCwDn.LbIdbNaE3NWTPA5AjEWSIlqz.p
+ q63_syNF4ujJ03mkhiVSWEkjhJJ84MrFu_jLImI.At3DNl74Mog7f9hswI5g
+ gTol08uD1RlXk_yqKfIv0l1E_Ubr8MvWd8GxP214sCEwoVWzMi4keht8ZO0r
+ 1uDhID79g2gH_AwZlDLkwSANH9eCrLsqWJ.IHvoHjVau1oa8PFFb9zfXebEd
+ uwJBmks4NO2.mhYh7cFnciMTtVLq1PzZzRU-
+Received: from 185.17.255.14 (EHLO wochna.ie)
+ by 10.197.33.11 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256);
+ Sat, 22 Nov 2025 18:34:11 +0000
+Received: from aglishlabs.email (localhost [127.0.0.1])
+	by wochna.ie (Postfix) with ESMTP id 93E021FE9
+	for <aglishlabs_msc@yahoo.com>; Sat, 22 Nov 2025 18:34:06 +0000 (UTC)
+Subject: Meeting in Castlebar tomorrow for regime none
+Message-Id: <20251122183407.93E021FE9@wochna.ie>
+Date: Sat, 22 Nov 2025 18:34:06 +0000 (UTC)
+From: me@aglishlabs.email
+Content-Length: 197
+
+Hi,
+
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+
+If that time or place doesn't suit, let me know what works better for you.
+
+Thanks,
+John

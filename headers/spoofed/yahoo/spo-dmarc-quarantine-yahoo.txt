@@ -1,0 +1,49 @@
+Received: from 127.0.0.1
+ by atlas-production.v2-mail-prod1-gq1.omega.yahoo.com pod-id atlas--production-gq1-76fd96d49-ht9v4.gq1.yahoo.com with HTTP; Sun, 23 Nov 2025 12:01:12 +0000
+Return-Path: <me@aglishlabs.email>
+X-Originating-Ip: [185.17.255.14]
+Received-SPF: fail (domain of aglishlabs.email does not designate 185.17.255.14 as permitted sender)
+Authentication-Results: atlas-production.v2-mail-prod1-gq1.omega.yahoo.com;
+ dkim=unknown;
+ spf=fail smtp.mailfrom=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+ dmarc=fail(p=QUARANTINE) header.from=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+X-Apparently-To: aglishlabs_msc@yahoo.com; Sun, 23 Nov 2025 12:01:12 +0000
+X-YMailISG: .MEkXrYWLDsHegVueFcZsVHvsamN9mLqOFs6bf7PDSHxcW5k
+ g2WPlCVzS.d2N86DkOQ_oL19LVh5NSetGUsuxpVTdTOKpjva1cIuHgtEJUmJ
+ _4xP9bmKZRTKy0C_kLKI.DDsGfQ4rm0.R_hbrq.b5FuccVjn01mG.rtBXyYq
+ DKD1CgaoZ8Sla5XFqYL2iQaS6QYPy7UVmjNJ4cFyHdnsxfyRRus2D6sMHDRl
+ cyXSlGOj7aGNYeHprmYSf_hL_SQah6GqCl1skuIfxCIV8ByqXrO7wyHz4R6v
+ hjwKQl0wBgLiCLdzsnSiC0AUg1aOnrSnJYdoK0TKXI7JuK50ow07DTdC_i1.
+ 00aR_s99WEAmqkaqXG5Ik.N001odlhcJ4ZHmoSukiCTVGRRlXN0btoora86q
+ 7VWjye0W0ppRwzd45EgztYXp_z2fecPEkZlVteHEMtHEMd_OUA2W8NWqc28t
+ kyh8VbcNPAfimbV3ukXA0y3SEo8.ue0nzUpU4WRDXfWXQp5OeOSsVXKznR8o
+ .PCoxkYbAcSefS64SAuJmU4E0E4r_9atnEEFdsc7rVF5xRPoc5oyGQlG5Mon
+ R_WlQsyS1O2fNWq7MZi9uqlI9M7g6cRYs6_M8WF7mY7P7HDfyopaHRpf2VAw
+ hwgGdMkBdyCEskPR4w27v2bxbWVaRyrzlRxkxiHrGGxNB2tdWzlsve5AFYM6
+ WNOn0t5OlaVm7PXH8SSo0yGeDGcbd9V58d1KAwba3WVUnpe463bQsR7APmui
+ 0BHVpDXu5PfPQlaQrN8usFudtEzJ5bz1t5a9F1ci4.OBwhR99ls4FD6HauV3
+ wMnapuhjF3sOi99GDFZG_XpKZkbllmi8fppwZ.IQv_0RyNhQVNZ5PmuKRw8k
+ e_Vhtav3QmozPE8W9dqgn51e.uwSYymfdU92NMMNMNLAxbxzRFXLMC1QWB1N
+ 0rI6HtYDCMQFa0IwWNCwA0SUHRzkcdh0Kev1nme6f2_8iI4FWdSF10k66PZb
+ 2kHgSRXo1izqSyyhB9usawttf_A-
+Received: from 185.17.255.14 (EHLO wochna.ie)
+ by 10.253.230.153 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256);
+ Sun, 23 Nov 2025 12:01:12 +0000
+Received: from aglishlabs.email (localhost [127.0.0.1])
+	by wochna.ie (Postfix) with ESMTP id C7BF22016
+	for <aglishlabs_msc@yahoo.com>; Sun, 23 Nov 2025 12:01:06 +0000 (UTC)
+Subject: Meeting in Castlebar tomorrow for regime dmarc-quarantine
+Message-Id: <20251123120107.C7BF22016@wochna.ie>
+Date: Sun, 23 Nov 2025 12:01:06 +0000 (UTC)
+From: me@aglishlabs.email
+Content-Length: 197
+
+Hi,
+
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+
+If that time or place doesn't suit, let me know what works better for you.
+
+Thanks,
+John

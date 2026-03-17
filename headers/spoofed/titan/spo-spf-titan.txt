@@ -1,0 +1,33 @@
+Return-Path: <me@aglishlabs.email>
+Received: from mx.titan.email (localhost [127.0.0.1])
+	by prod-euc1-smtp-in1002.ops.titan.email (AQM) with ESMTP
+	id 4dDNZ60qlyz9rvR(195041006175172608);
+	Sat, 22 Nov 2025 20:13:18 +0000
+Received-SPF: none (no SPF record) identity=mailfrom; client-ip=185.17.255.14; helo=wochna.ie; envelope-from=me@aglishlabs.email;
+Received: from wochna.ie (wochna.ie [185.17.255.14])
+	(using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx.titan.email (Postfix) with ESMTPS id 4dDNZ60qlyz9rvR
+	for <msc@dmarclabs.eu>; Sat, 22 Nov 2025 20:13:17 +0000 (UTC)
+Received: from aglishlabs.email (localhost [127.0.0.1])
+	by wochna.ie (Postfix) with ESMTP id 948141FE9
+	for <msc@dmarclabs.eu>; Sat, 22 Nov 2025 20:13:14 +0000 (UTC)
+Subject: Meeting in Castlebar tomorrow for regime spf
+Message-Id: <20251122201315.948141FE9@wochna.ie>
+Date: Sat, 22 Nov 2025 20:13:14 +0000 (UTC)
+From: me@aglishlabs.email
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=dYh63WXe c=1 sm=1 tr=0 ts=6922195e
+	a=+pVcnKK4OFh5I0Xw0BUIfQ==:117 a=+pVcnKK4OFh5I0Xw0BUIfQ==:17
+	a=9cW_t1CCXrUA:10 a=MKtGQD3n3ToA:10 a=6UeiqGixMTsA:10
+	a=OrvvYCvq-8bC5MAY-bMA:9 a=zZCYzV9kfG8A:10 a=0ltMycs3b22GFFDWaKRb:22
+	a=NWVoK91CQySWRX1oVYDe:22
+
+Hi,
+
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+
+If that time or place doesn't suit, let me know what works better for you.
+
+Thanks,
+John

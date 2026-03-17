@@ -1,0 +1,130 @@
+Received: from PAWPR08MB11144.eurprd08.prod.outlook.com (::1) by
+ DU2PR08MB10065.eurprd08.prod.outlook.com with HTTPS; Sun, 23 Nov 2025
+ 09:41:14 +0000
+Received: from BL1PR13CA0330.namprd13.prod.outlook.com (2603:10b6:208:2c1::35)
+ by PAWPR08MB11144.eurprd08.prod.outlook.com (2603:10a6:102:46a::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9343.16; Sun, 23 Nov
+ 2025 09:41:12 +0000
+Received: from BN2PEPF000055DC.namprd21.prod.outlook.com
+ (2603:10b6:208:2c1:cafe::5d) by BL1PR13CA0330.outlook.office365.com
+ (2603:10b6:208:2c1::35) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9366.8 via Frontend Transport; Sun,
+ 23 Nov 2025 09:41:12 +0000
+Authentication-Results: spf=none (sender IP is 185.17.255.13)
+ smtp.mailfrom=aglishlabs.email; dkim=pass (signature was verified)
+ header.d=aglishlabs.email;dmarc=bestguesspass action=none
+ header.from=aglishlabs.email;compauth=pass reason=109
+Received-SPF: None (protection.outlook.com: aglishlabs.email does not
+ designate permitted sender hosts)
+Received: from box.aglishlabs.email (185.17.255.13) by
+ BN2PEPF000055DC.mail.protection.outlook.com (10.167.245.6) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9388.0
+ via Frontend Transport; Sun, 23 Nov 2025 09:41:11 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:A3F19A77478380D6FE355235EF6386919D607CAEB3CEA5158DB08FA2A00429BC;UpperCasedChecksum:C5286FA240AE5B8EBB83CA285B9296CFE0B877A9EBC27416B784F6007CA81E5C;SizeAsReceived:1153;Count:7
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email;
+	s=mail; t=1763890871;
+	bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+	h=Date:To:From:Subject:From;
+	b=X0lTHBK7I0/3jsYPB5Wc/CM3rbmPfKhU8fR68T2OTBuh2LoFmqTys0zNzU5keu75J
+	 6mKZKFT6eOFc3x71dnp8cYlOj2lyRpv7mWK1HKM2g9JIdgiIAr3i0ciWKX1R09Llsy
+	 aL/vSb89Ir/QFYMOM/M2CmmIXPs8McmzjLoV8F1RwNObj4d/CRKhb31oj7/qbuZXqo
+	 vKnLCzz6XGyqQbrvSg5CwjUfuNGeDsdQDHqKVKzTmn6qiFXQu9JIEQnazkmnOGKbL4
+	 8iorZuQsA+vTJ9Qr4b6scoxQ9Delo+GGXmTWSKGHuHSxww3ohGKC7pq6Q9pm9BliA8
+	 hFPhTd0LiVuSg==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by box.aglishlabs.email (Postfix) with ESMTPSA id E124210FD
+	for <aglishlabs_msc@hotmail.com>; Sun, 23 Nov 2025 09:41:10 +0000 (GMT)
+Date: Sun, 23 Nov 2025 09:41:10 +0000
+To: aglishlabs_msc@hotmail.com
+From: me@aglishlabs.email
+Subject: Legitymate Test - dkim - hotmail - 20251123T0939_dkim
+Message-ID: <20251123094110.1260433@pop-os>
+X-IncomingHeaderCount: 7
+Return-Path: me@aglishlabs.email
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Nov 2025 09:41:12.0346
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: e1667c6d-b958-4205-f791-08de2a747035
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN2PEPF000055DC:EE_|PAWPR08MB11144:EE_|DU2PR08MB10065:EE_
+Content-Type: text/plain
+X-MS-Exchange-Organization-AuthSource: BN2PEPF000055DC.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 11/23/2025 9:31:33 AM
+X-MS-Office365-Filtering-Correlation-Id: e1667c6d-b958-4205-f791-08de2a747035
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.17.255.13
+X-SID-PRA: ME@AGLISHLABS.EMAIL
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|42200799015|84100799003|30140799003|461199028|56000799018|33080799003|1360799030|1370799030|1380799030|440099028|3412199025;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Nov 2025 09:41:11.8153
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e1667c6d-b958-4205-f791-08de2a747035
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: BN2PEPF000055DC.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PAWPR08MB11144
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3047535
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9343.011
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(2008001181)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?99ctCa3tPjAmnPxbO5nSLqK4Ly9xmIjGy4Ll52egVqSd8950MWbu7QtliU?=
+ =?iso-8859-1?Q?edIklIpqC7Y8/CZXW1Zq3zu6gLPKrKbjLmZRZFDF+4gLrNlzYvPsvdT7LN?=
+ =?iso-8859-1?Q?sAwgCo6+GVjKyxy/ErkGfos3wDV2G+/SN9QshjZO5aag4Tx9/88hoczxxD?=
+ =?iso-8859-1?Q?iwC1PlwNea40Bfm+vgFiW9vBvlZf62VzPUgKQ+FLs3bpZihhRw95l/Kmvn?=
+ =?iso-8859-1?Q?5UX/sfLG1UucpKNVjmXgiROpBy8cgeO0c2wBRIbsT3IiELpbSBQSj7RDhV?=
+ =?iso-8859-1?Q?rboKg2t9viExyMUxCI/u0PzU8c9CDdApO7AUejJtEbA4ro83/UUhKR0X+4?=
+ =?iso-8859-1?Q?4aCqFGepUjspbnTL8BZ66Nr+Byehf9YIM4qvDaZDNM6KQ9i3RAn3FtMH33?=
+ =?iso-8859-1?Q?zXYemXZnRHEzbz0ndBDJ49HJHZYlEbQzTxse3Y7UkhhNCCzzSKIgf9i46O?=
+ =?iso-8859-1?Q?Fwn8jlLrp4lbb+aTI6T6eaqSM76zae3GqCDL4wllYqFZdFIIh7nhbD4nrg?=
+ =?iso-8859-1?Q?nZvekFFcvWSLPyqzMoJlxADOmTvcB8r6i4F5ynFN7izsVrriBSzPlu+RTb?=
+ =?iso-8859-1?Q?ShK0k9np248geMj8favnJg2S3hD8MRqN3O2ZAhGKDGVacdROXKPrT88jTA?=
+ =?iso-8859-1?Q?bbetW3Dh6MlsrkLduNIe3kJGkZjcDogGo4TtjTdDPKmQVcGhrVqz/Gk/PL?=
+ =?iso-8859-1?Q?kD5b1bDfix+AInNUjiudVnQyRLj6HlmoI/lsSN6VfqYqPRukIE7t+zrZKp?=
+ =?iso-8859-1?Q?bH1lo6A6yqe3TGsOpCz1GXOYvLV8uBvCLk0+2Zc7Y2NdtrM/x0wt4x/BuN?=
+ =?iso-8859-1?Q?SkBpsm3sHh94SHw6A619pTUU++ja4VkcgzDXIv37X+IxUzXMClHeCwABt5?=
+ =?iso-8859-1?Q?rTCutXB/cAJrDqOlJWgHJqlPVAgNoyNFLtUIcAWTU60icimGM0wIHZ0pNr?=
+ =?iso-8859-1?Q?43VG63R+qfwqpCl5TznodlMqt2vrsuRbryI8ABSHk8Rz4Y6kIz+zA1CoCY?=
+ =?iso-8859-1?Q?hkvaS6pWCoFiHdS0TAZd+7E0lCO3kEi9mv9MOGVCrEwk6oMqqwlr/Q71dw?=
+ =?iso-8859-1?Q?Tfq2JEjQp/zVuDkkJBJbHV7PoDl4GQN1K6BQXvm0djP0/jXsQbsP9xlIYF?=
+ =?iso-8859-1?Q?MLNars5mhFWseia9WPWNSHj/Ds92MJ7hZ+uXhLleV99uLZJ8xd4t/PWIPX?=
+ =?iso-8859-1?Q?J6r8CmzDemRpw4KVMZccUkvhsRlW/6C0N/ti/tj4s0NcP1iDcEnrDNoqRu?=
+ =?iso-8859-1?Q?irrLNo12H2eFLRTADeD8BKie4Nv9fZw+OxQm3KI0ZHoPGCYD1/TUjV82LP?=
+ =?iso-8859-1?Q?YHJDoRYQpBwin0n/c/GRSsyVqjjYuTQgLEnUFo2Z+DWlmIFg80ONgQGvPX?=
+ =?iso-8859-1?Q?tg7Kx3WkLrgM4cBHzw1l9cXYcyI3od7qkCPsWinLPefGIAGZ3x2dlM/jYj?=
+ =?iso-8859-1?Q?8zeAFRMbc3tYbdRyvxBXHgUd9ieTsJfBQyBsKSN0PIZfqt64nrebi6VJoX?=
+ =?iso-8859-1?Q?1Kom1pAvsUcymsz5K1jP8Wf+Od3cWFd0BX4l8PXj4a14TAsYXn7tr0R0fA?=
+ =?iso-8859-1?Q?8+DUADR4BffqrCbYPHml1fiJ1fNRE2U5Q2RF1Sx9iNddUKju+whIrQdqp1?=
+ =?iso-8859-1?Q?kXY2gV9YblxU1jZwAIf6aBaQ9xTJtsOFImPUu/HNchmyPD3xIUAz7D1+Bx?=
+ =?iso-8859-1?Q?DFatBE7Sh89GPLtsh7YcOeS2B1N4NvYJs4Wsi3re/pEbgzw+8157V1hFa9?=
+ =?iso-8859-1?Q?tCzjJqAyfp5HiGoqMD8oGIWoaXCFE9l4M/YD+RBb/634k38FC8g4RArVZ2?=
+ =?iso-8859-1?Q?AnRXXABU9MYEhiTT2Iz0wKSNSEs+n3fXVwaQo0UEcKSMQNRjLTdH/UBwbP?=
+ =?iso-8859-1?Q?25/t8qBmBSyqKqeHw4wi35EQ5iLh2EbbkcNnKkZfLoBIr/0RvQh6bFAoYI?=
+ =?iso-8859-1?Q?qx+CIXFJGT1SmsFEbzhcy3macRkjKw2DkHKJbhcG3sggraatJjqvf4BUqX?=
+ =?iso-8859-1?Q?lxDu5KR9jzgnyLcsWtU0VAYyj5xW0RrGIuGZPfxQnt9Wde07QobM+1XLiB?=
+ =?iso-8859-1?Q?rrPIrkV3DO2I/R23N3fYp+MxDEwJAz/DOlH0rRVx/l3Y1pD77cW2pg9egF?=
+ =?iso-8859-1?Q?jTdyTXc/Upqj25dY3BaSNv0TUMqzIKzpdfeOI31xb58OJqec7kkF32zfQt?=
+ =?iso-8859-1?Q?FjlgU0zT6bbGari7mu3v3eDfPEkUmcbFHh5Qnqbn6V2yspb9oVPuw/h8Ib?=
+ =?iso-8859-1?Q?O67pM+ilA=3D?=
+MIME-Version: 1.0
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+

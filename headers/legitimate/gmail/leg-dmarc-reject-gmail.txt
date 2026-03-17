@@ -1,0 +1,60 @@
+Delivered-To: aglishlabs.msc@gmail.com
+Received: by 2002:a05:7108:544d:b0:4ff:ebfb:4892 with SMTP id e13csp1356751gdw;
+        Sun, 23 Nov 2025 05:16:00 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IEc4i29xls/Xy2IjUSUpLbC0PoPDRXsQt62JVfIOv9NK8PvvwD5fPr7QrGmNx0WHkZoc3AF
+X-Received: by 2002:a05:600c:1c02:b0:477:9caa:1a26 with SMTP id 5b1f17b1804b1-477c01eed7cmr85597235e9.29.1763903759954;
+        Sun, 23 Nov 2025 05:15:59 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1763903759; cv=none;
+        d=google.com; s=arc-20240605;
+        b=enArFc6iCuniLUJUrM7cW+SsJQVhjJOSkx+WIdlvuWGbT0sIf3vt1ZVGgCF4afmmxa
+         yQ9su0wSHz2gtkZ3ij5/PCOPPGF0TY+OkKeakTl9r8WFbd4udU9vWbHoGMowgyDl7055
+         H1ZYEHHLph8mHUC45DroD7SkyiuKoegXxqXR2CDBdcqKe+LX5IQPG4B8Sb0aPMDtxNe9
+         hRo8b5UjH5FDJv6UISifEuNyo0nzKwEYY365eiyQRJrjZES3Csc2Ux6J45xpc+vNzbI3
+         E8LznJzYrPK07e7ZmHZVCQIzRLz9HrGScLGEIq9AwcIDX2uV2DhO9u/iHQYWG4nX2IRs
+         kUlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:subject:from:to:date:dkim-signature;
+        bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+        fh=2YbGnYsQvLXtTuGJsLFPpuLz7iXx88tQk+pgqDWJdO8=;
+        b=T+hjUA7c1gSBudPzMVtROFUwZp/1bRS7Y7SEih2lK/7LEa8dibmC/HllzDHORC77PE
+         tT8qcA5xNW9HILq5cHCEEnNOIF9fOBqV2kLm/ur3ArK5xFa5wnfgqNt9imgchAmc1nIL
+         RdDJq0hPfx/Kv2JRA/Wxujh63d5RSezBtwSNxkBxIHZeACXym3Y1xWymG9b7BwLNEGqm
+         tH+Dz18BGkPdUsN2cBH8EGxO3JSxMEpRRfqMUciM+F5DYWi95emEA/EKEs1omzahDTXo
+         tZ7AHn5QiCJiXUMpbWSxeDWHtmorL9Wy5SwwG9WicKPuFDh8Qg0m6H8Ga9VXBxv/CFZ2
+         iADA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aglishlabs.email header.s=mail header.b=IoqsIhy+;
+       spf=pass (google.com: domain of me@aglishlabs.email designates 185.17.255.13 as permitted sender) smtp.mailfrom=me@aglishlabs.email;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=aglishlabs.email
+Return-Path: <me@aglishlabs.email>
+Received: from box.aglishlabs.email (box.aglishlabs.email. [185.17.255.13])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-42cb8680436si4542170f8f.1267.2025.11.23.05.15.59
+        for <aglishlabs.msc@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 23 Nov 2025 05:15:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of me@aglishlabs.email designates 185.17.255.13 as permitted sender) client-ip=185.17.255.13;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aglishlabs.email header.s=mail header.b=IoqsIhy+;
+       spf=pass (google.com: domain of me@aglishlabs.email designates 185.17.255.13 as permitted sender) smtp.mailfrom=me@aglishlabs.email;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=aglishlabs.email
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email; s=mail; t=1763903759; bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=; h=Date:To:From:Subject:From; b=IoqsIhy+02YJYtRBa7W6zR+DFeBTb3k6BuTqpEZ5LK9qQtVcGOvw/sc1KOb0a0Sao
+	 xH/sK5uu/ftmYQ0jtJ0GUEDnYrrmenPuoTu6UjyDjrl808cok3OsPeWjA/9bEsn4N2
+	 0tmgkKBxLo/jKUTyOdpS8wMFkB3PLxDDVIZgkCPoh5vHof8vTra2JpGVCFIZSd/QAV
+	 yR/M8BkaumuFNTY1Dpu9m790tELgh/CjxlB8OXte8louBY/t/u0UMOXTVjisVG72vN
+	 zJsWX1Mt4tiqoWTAFPfSGeomr2Q7fOfMUX71VIjdu61FJXhI+qTDODn51rAJ7tNqhN
+	 AraRacM9NgLJA==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No client certificate requested) by box.aglishlabs.email (Postfix) with ESMTPSA id 2FF6810F5 for <aglishlabs.msc@gmail.com>; Sun, 23 Nov 2025 13:15:59 +0000 (GMT)
+Date: Sun, 23 Nov 2025 13:15:58 +0000
+To: aglishlabs.msc@gmail.com
+From: me@aglishlabs.email
+Subject: Legitymate Test - dmarc-reject - gmail - 20251123T1315_dmarc-reject
+Message-Id: <20251123131558.1268141@pop-os>
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+

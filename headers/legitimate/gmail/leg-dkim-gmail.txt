@@ -1,0 +1,58 @@
+Delivered-To: aglishlabs.msc@gmail.com
+Received: by 2002:a05:7108:544d:b0:4ff:ebfb:4892 with SMTP id e13csp1278609gdw;
+        Sun, 23 Nov 2025 01:39:49 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGmK6WNwOTbiIQ5EugKwoIgR+ChgaO9Sp9/XogzmFMsa1acUn17X3TEwQFtEcT0fU175u13
+X-Received: by 2002:a05:600c:1c0c:b0:46e:7e22:ff6a with SMTP id 5b1f17b1804b1-477c018a099mr103955935e9.15.1763890789501;
+        Sun, 23 Nov 2025 01:39:49 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1763890789; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Y2N4x+/uqwX96lTKNLHguTEJSTg4in19tP2xTY2OPjrPMnBmap/qmveHWVAymCdhSH
+         sk7z7R0fB1owx7yDUx/cCrdufitgot9iRHJ0IhdKyL1iy6i03HW+Y0HJT37C2QD7w5QQ
+         Xuxs9Xy9oaWokCbmZFcuVfqg0Szav7xHrp4DY2uhjxGkIUcmEpuVQeZ2pq4to6GG40F1
+         eGuNPVHPoilFHA9bSHenLvWo/DopZkb9JjKGrO5zFXYq0oGjMdr5DIGvRRXjcPcjtr9x
+         BImj7caAqwkPEhiRseZXeGWilzqmmzegnAYiEtVcRo65SlEODJvFnJeOZOnc/Khh2NpA
+         CNlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:subject:from:to:date:dkim-signature;
+        bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+        fh=2YbGnYsQvLXtTuGJsLFPpuLz7iXx88tQk+pgqDWJdO8=;
+        b=FhLS8/BGLQgpIi4x4TLstz8tT4wAmNj+avNRXUJaMhqGaTo+b+xlHJhWUn3rcLiQfW
+         cVzNEtt1BdAh6JrvNe65BMh6kz3hea6VnkYlassd63wEmEssN4lhawnKBX8062YcnCz3
+         wiCVUPbI8UvaL0V9iTthhpkuoS6mbmfRIwaYQPQ2MxpUbBJhhqC4AKsGNxzGlmtH1pDF
+         cMKTi2fomyhbNdj0Jvd6o0TppyUqZyT7Wj364Iw7Zd0JOPqmxPi5pjuOI12Ei1cYnMW5
+         MKw88vsu/9NLQ/wCKE00nLYyExllisLTEkgHwLL5bSV3IvzM6YlDJt6WwYG1yqcl+oyD
+         qe9Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aglishlabs.email header.s=mail header.b="X/FGiYk4";
+       spf=none (google.com: me@aglishlabs.email does not designate permitted sender hosts) smtp.mailfrom=me@aglishlabs.email
+Return-Path: <me@aglishlabs.email>
+Received: from box.aglishlabs.email (box.aglishlabs.email. [185.17.255.13])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-42cb868edb6si4495864f8f.1746.2025.11.23.01.39.49
+        for <aglishlabs.msc@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 23 Nov 2025 01:39:49 -0800 (PST)
+Received-SPF: none (google.com: me@aglishlabs.email does not designate permitted sender hosts) client-ip=185.17.255.13;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aglishlabs.email header.s=mail header.b="X/FGiYk4";
+       spf=none (google.com: me@aglishlabs.email does not designate permitted sender hosts) smtp.mailfrom=me@aglishlabs.email
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email; s=mail; t=1763890788; bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=; h=Date:To:From:Subject:From; b=X/FGiYk4Fm7dkeMm3R2CWAjdrRcAiYLm9xGB7OSiTLupBjlnQWEO0Bw/6d5vFfENm
+	 ulLc5QN0NNL+e36wItFra8RzhimmiZiNg9M1NPUGpIxHIdyh1QZFRBGcD1KRufbP7k
+	 IO92DUr+Y/FulhCgI7zjGUCFv6St27kZLrCqoTtirLgn/5k/RjIuO3Bv4RLVA/76rB
+	 OPQM9EfxI8n96R6niiEh5N3nDs9seoaO7+GH9ZDFe2lkxVirARuobDWHxD92LWwyzf
+	 WxuUGqZ5TpEqjP8J4WJkELxVduNMqjXJQyd7kHfVUfxi9xVghvGDW7SprVEHGNYJUm
+	 H153sEgXgCO8Q==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No client certificate requested) by box.aglishlabs.email (Postfix) with ESMTPSA id B906FCBD for <aglishlabs.msc@gmail.com>; Sun, 23 Nov 2025 09:39:48 +0000 (GMT)
+Date: Sun, 23 Nov 2025 09:39:47 +0000
+To: aglishlabs.msc@gmail.com
+From: me@aglishlabs.email
+Subject: Legitymate Test - dkim - gmail - 20251123T0939_dkim
+Message-Id: <20251123093947.1259911@pop-os>
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+

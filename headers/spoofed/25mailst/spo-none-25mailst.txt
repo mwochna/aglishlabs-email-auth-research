@@ -1,0 +1,40 @@
+Return-Path: <SRS0=yIFI=56=aglishlabs.email=me@srs.mail-10005203.25mail.st>
+Delivered-To: msc@dmarclabs.org
+Received: from mail-10005203.25mail.st
+	by mail-10005203.25mail.st with LMTP
+	id ujfSGnQFImmcBxcAOCv7dg
+	(envelope-from <SRS0=yIFI=56=aglishlabs.email=me@srs.mail-10005203.25mail.st>)
+	for <msc@dmarclabs.org>; Sat, 22 Nov 2025 18:48:20 +0000
+X-Original-To: msc@dmarclabs.org
+DMARC-Filter: OpenDMARC Filter v1.4.2 mail-10005203.25mail.st 16C8CC6B4
+Authentication-Results: opendmarc.mail-10005203.25mail.st; dmarc=none (p=none dis=none) header.from=aglishlabs.email
+Authentication-Results: opendmarc.mail-10005203.25mail.st; spf=none smtp.mailfrom=aglishlabs.email
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail-10005203.25mail.st 16C8CC6B4
+Authentication-Results: mail-10005203.25mail.st; dkim=none;
+	dkim-atps=neutral
+Received: from wochna.ie (wochna.ie [185.17.255.14])
+	by mail-10005203.25mail.st (Postfix) with ESMTPS id 16C8CC6B4
+	for <msc@dmarclabs.org>; Sat, 22 Nov 2025 18:48:20 +0000 (UTC)
+Received: from aglishlabs.email (localhost [127.0.0.1])
+	by wochna.ie (Postfix) with ESMTP id B0C711FE9
+	for <msc@dmarclabs.org>; Sat, 22 Nov 2025 18:48:16 +0000 (UTC)
+Subject: Meeting in Castlebar tomorrow for regime none
+Message-Id: <20251122184817.B0C711FE9@wochna.ie>
+Date: Sat, 22 Nov 2025 18:48:16 +0000 (UTC)
+From: me@aglishlabs.email
+X-Spam-Status: No, score=1.2 required=5.0 tests=DMARC_MISSING,MISSING_HEADERS,
+	SPF_HELO_NONE,SPF_NONE autolearn=no autolearn_force=no version=4.0.1
+X-Spam-Level: *
+X-Spam-Checker-Version: SpamAssassin 4.0.1 (2024-03-25) on
+	mail-10005203.25mail.st
+X-Virus-Scanned: clamav-milter 1.0.7 at mail-10005203.25mail.st
+X-Virus-Status: Clean
+
+Hi,
+
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+
+If that time or place doesn't suit, let me know what works better for you.
+
+Thanks,
+John

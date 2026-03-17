@@ -1,0 +1,49 @@
+Return-Path: <me@aglishlabs.email>
+Received: from mx.titan.email (localhost [127.0.0.1])
+	by prod-euc1-smtp-in1001.ops.titan.email (AQM) with ESMTP
+	id 4dDnxv5gTxz6tkK(195101628254093312);
+	Sun, 23 Nov 2025 12:16:51 +0000
+Authentication-Results: mx.titan.email; dmarc=pass reason="(p=none sp= dis=none)" header.from=aglishlabs.email
+Received-SPF: none (no SPF record) identity=mailfrom; client-ip=185.17.255.13; helo=box.aglishlabs.email; envelope-from=me@aglishlabs.email;
+Authentication-Results: mx.titan.email;
+	dkim=pass (2048-bit key) header.d=aglishlabs.email header.i=@aglishlabs.email header.b="aVh1BRHk"
+Received: from box.aglishlabs.email (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx.titan.email (Postfix) with ESMTPS id 4dDnxv5gTxz6tkK
+	for <msc@dmarclabs.eu>; Sun, 23 Nov 2025 12:16:51 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email;
+	s=mail; t=1763900211;
+	bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+	h=Date:To:From:Subject:From;
+	b=aVh1BRHkv1PbhS2AMNseqZ8pVWm3aFp0zG2y0ux3uyQ3Es05YsrBxV5nmSbfJabaZ
+	 RN+4rvvPNyS5AdpyJNpLY2ef9MAsLm83Z+6908VUaoqFTd3qUX53gLpE9d29x53Czi
+	 vl3JOi1vxW/fwNw0xTn57LA3BI8LH4Y8AIfGC4pspFEKizDu8+FEvvx95UZPv8riZI
+	 IPVjHSA/mHJuafSxKTjRFLLeBaBYcBBgiWW4tALlifWK0+vB4E/ZTwQio/yXQKnYZ7
+	 07uoX3NuDxSNSHV+ZdfksLALbAIN1RVfBz63O9cIPpY5HSAYPbnTSe10KXI5v49AQC
+	 ursdZQk2MX3cw==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by box.aglishlabs.email (Postfix) with ESMTPSA id 8AA4428E8
+	for <msc@dmarclabs.eu>; Sun, 23 Nov 2025 12:16:51 +0000 (GMT)
+Date: Sun, 23 Nov 2025 12:16:51 +0000
+To: msc@dmarclabs.eu
+From: me@aglishlabs.email
+Subject: Legitymate Test - dmarc-quarantine - blacknight - 20251123T1213_dmarc-quarantine
+Message-Id: <20251123121651.1267402@pop-os>
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=dYh63WXe c=1 sm=1 tr=0 ts=6922fb33
+	a=mbLAhWL6+Gf08xvppRzBsA==:117 a=mbLAhWL6+Gf08xvppRzBsA==:17
+	a=MKtGQD3n3ToA:10 a=6UeiqGixMTsA:10 a=-fezx8qmPFkA:10
+	a=OrvvYCvq-8bC5MAY-bMA:9 a=zZCYzV9kfG8A:10 a=0ltMycs3b22GFFDWaKRb:22
+	a=NWVoK91CQySWRX1oVYDe:22
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+
+

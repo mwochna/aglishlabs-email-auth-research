@@ -1,0 +1,48 @@
+Return-Path: <me@aglishlabs.email>
+Received: from mx.titan.email (localhost [127.0.0.1])
+	by prod-euc1-smtp-in1002.ops.titan.email (AQM) with ESMTP
+	id 4dDkXS6M1Mz9rvS(195091953154832384);
+	Sun, 23 Nov 2025 09:43:05 +0000
+Received-SPF: none (no SPF record) identity=mailfrom; client-ip=185.17.255.13; helo=box.aglishlabs.email; envelope-from=me@aglishlabs.email;
+Authentication-Results: mx.titan.email;
+	dkim=pass (2048-bit key) header.d=aglishlabs.email header.i=@aglishlabs.email header.b="IJpCs3zy"
+Received: from box.aglishlabs.email (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx.titan.email (Postfix) with ESMTPS id 4dDkXS6M1Mz9rvS
+	for <msc@dmarclabs.eu>; Sun, 23 Nov 2025 09:43:04 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email;
+	s=mail; t=1763890984;
+	bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+	h=Date:To:From:Subject:From;
+	b=IJpCs3zy+Op1dOUT+R41U1EdidvzF4EAbM5mLdzYmTPmBFkcuNSfxdUXqCkvzkbfb
+	 2eGdTLyF90UStjaPsQYKj9IiDwtA4PNJ/suMpTiWibI476AWQDtVMzKyN4uLdkQBlK
+	 T+Nlq39PF7AZuNMnhXPCPzH1MeseoE+FMsRQ42lzGq4f28fruLAQavwkTq0PLc0uns
+	 AZLqemLTVixK8bsgHq1fGj5QOMhznE+aHvK/9ePWiYSX44nK/JDJb4E61ya/9f/MC4
+	 MrbB5Wfptf1c3sjyveAjP/5xes6+wuAcpjvkiJ8If/xRLi3X/U9OC6VQzCKCV5mgDt
+	 D/axeNeVgOnuA==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by box.aglishlabs.email (Postfix) with ESMTPSA id A14AC28A8
+	for <msc@dmarclabs.eu>; Sun, 23 Nov 2025 09:43:04 +0000 (GMT)
+Date: Sun, 23 Nov 2025 09:43:04 +0000
+To: msc@dmarclabs.eu
+From: me@aglishlabs.email
+Subject: Legitymate Test - dkim - blacknight - 20251123T0939_dkim
+Message-Id: <20251123094304.1261151@pop-os>
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=O9XDvA9W c=1 sm=1 tr=0 ts=6922d728
+	a=mbLAhWL6+Gf08xvppRzBsA==:117 a=mbLAhWL6+Gf08xvppRzBsA==:17
+	a=MKtGQD3n3ToA:10 a=6UeiqGixMTsA:10 a=-fezx8qmPFkA:10
+	a=OrvvYCvq-8bC5MAY-bMA:9 a=zZCYzV9kfG8A:10 a=0ltMycs3b22GFFDWaKRb:22
+	a=NWVoK91CQySWRX1oVYDe:22
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+
+

@@ -1,0 +1,51 @@
+Return-Path: <me@aglishlabs.email>
+X-Original-To: aglishlabs_msc@proton.me
+Delivered-To: aglishlabs_msc@proton.me
+Received: from wochna.ie (wochna.ie [185.17.255.14]) (using TLSv1.3 with cipher
+ TLS_AES_256_GCM_SHA384 (256/256 bits)
+  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No
+ client certificate requested) by mailinosl101.protonmail.ch (Postfix) with ESMTPS id
+ 4dDNYD4VZFz5t for <aglishlabs_msc@proton.me>; Sat, 22 Nov 2025 20:12:32 +0000 (UTC)
+Received: from aglishlabs.email (localhost [127.0.0.1]) by wochna.ie (Postfix) with ESMTP
+ id 77A1B1FE9 for <aglishlabs_msc@proton.me>; Sat, 22 Nov 2025 20:12:23 +0000 (UTC)
+Authentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)
+ header.from=aglishlabs.email
+Authentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=aglishlabs.email
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=185.17.255.14
+Authentication-Results: mail.protonmail.ch; dkim=none
+Subject: Meeting in Castlebar tomorrow for regime spf
+Message-Id: <20251122201224.77A1B1FE9@wochna.ie>
+Date: Sat, 22 Nov 2025 20:12:23 +0000
+From: me@aglishlabs.email
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJFOiOkVVVMFitJCLFbz99yY
+ 26SIZeJyQE9kUjIxowiOSPFJUR9FQEVkUUSUN9OSUxjoILJCS6IyUiMx4wiOSl2RXYVnnul2XmZi8s
+ iOnPFJURIC6pJyeWbnF9uZVlW1YIoji0NHaWYrNZpX2fmVbdVHufRWZHcfVAyMjwTENMAzitJCLWYs
+ lNwXztl9cbR2l6ICbmIh1wzaWtHIcLITwwUjMTOyEB0LniiwIbFWpz8FbHcfJJvcH6iIYM4CwxQDMj
+ M5Yk5OT4TIONczysUDNmIh1xfaW02FYZdWvflncWbk9wiZWtiJOYlWs0F2YSLy0I1MDxDkMM5iwsIC
+ dmIh1xfaW02FYZdWvflncmbtFI6ZSWkVIR5UUsIyUmIh1xfaW02FYZdWvflncHcvJI6Yi3C4MMITyw
+ kjNDMxgk2NT1zcMLJCwwN3XWYi0AuOjyDkONUTz1ITOTN0EIxMjiiwMc9FztFGc2XhJUic2ujAOOkD
+ yzUTNTO1IE0NTxjIMMwiiz9Fc2d0lhfY2fG9dchGpph2cmbicAuOj5DAMMcjx0UDNTO3kYwMz2zANL
+ JCyf5WdmbtFI6ZShndIdNGozlGbCdz15kZWtXIZcVHfpd3cGdoN19IniSwfcJ3p6ICZjI5YIxMjyTM
+ OZNGiiJ2YjM1IQ1NzzDUZZJS9fQ==
+X-Pm-Origin: external
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Spamscore: 0
+X-Pm-Spam-Action: spam
+Mime-Version: 1.0
+Content-Type: text/plain
+
+
+-----BEGIN PGP MESSAGE-----
+Version: ProtonMail
+
+wV4D1TfTe8J4bLMSAQdAsohii1/gVQIijZpKeVBMu9EcuEv/unai1uwJ+Teg
+rmUwync/ctw3h/0ZbOQMmzzOSnLQg8Jciwu3mVZOBGMZF6zi0WKTKpqVCW6b
+2Hl6rUSz0sAeAVJIukSPaOZs/CMGn17YHOCCVW+T7SUXKDoFT5YI7xO0+eS+
+urMHTGX2ZEQ6r4Ed7ch1CU3LrKKLtY0BiE6+2CyvVefe16+MlgZMUWnVuhde
+6pEO7DQLkmtGWhlnnJsaFl+P6nYM4aidt1tq5Fe4XwvfPTP6GlS5jHivMGcW
+TxuyvGhoMkJEtEwhnhW+BGgq1sj4ZKYJNpe2Rx0DrWPRtke1qLl3lK9yHg4E
+9hPQImEAswjRaI9c6Gn+n8BO+ywZA/7KULHj9IW0xVJraEAiUJh32rBXOe+H
+dBU6G0V2
+=kW75
+-----END PGP MESSAGE-----

@@ -1,0 +1,67 @@
+Return-Path: <me@aglishlabs.email>
+X-Original-To: aglishlabs_msc@proton.me
+Delivered-To: aglishlabs_msc@proton.me
+Authentication-Results: mail.protonmail.ch; dkim=fail (Bad 0 bit
+    rsa-sha256 signature.) header.d=aglishlabs.email header.a=rsa-sha256
+Authentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)
+ header.from=aglishlabs.email
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=aglishlabs.email
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=185.17.255.13
+Authentication-Results: mail.protonmail.ch; dkim=fail reason="key not found in DNS"
+ (0-bit key) header.d=aglishlabs.email header.i=@aglishlabs.email header.b="KKCH8YJ6"
+Received: from box.aglishlabs.email (box.aglishlabs.email [185.17.255.13]) (using TLSv1.3
+ with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No
+ client certificate requested) by mailin049.protonmail.ch (Postfix) with ESMTPS id
+ 4dDNtY56fBz3D for <aglishlabs_msc@proton.me>; Sat, 22 Nov 2025 20:27:33 +0000 (UTC)
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13]) (using TLSv1.3
+ with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+  key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No
+ client certificate requested) by box.aglishlabs.email (Postfix) with ESMTPSA id
+ 2B66728D1 for <aglishlabs_msc@proton.me>; Sat, 22 Nov 2025 20:27:33 +0000 (GMT)
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email; s=mail;
+ t=1763843253; bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+ h=Date:To:From:Subject:From;
+ b=KKCH8YJ6OibIDXYpmXvtpycXMRRdMAthyr12h1+S8maYXNk4FK0149ckF2zMiPztf
+  4Ma2yXkFUj8VWUnKzlIA8iCInMxtVAYIgyCN2Vvt1F6nDG0k6J+Sgc1OD83AdUg3SW
+  FOeP/kJu8izegmddS5xsynmlQ3zUb1tGuuJF7y5wOwHmhRM6P462vxd/2DRagxUfsE
+  tMk1ssR4jEtYSXNTxp9iqzcpmvEtlEkyBXu6cnWrrFkVIU0czfeW7U+opIByseBfY8
+  whZLy4upRZyoZXIaej8cunJWZA73fwb/SKuBJQ71jSUYQaSOq7JvgkoNDtrGswGZyP
+  shUq+qRj7bcXQ==
+Date: Sat, 22 Nov 2025 20:27:32 +0000
+To: aglishlabs_msc@proton.me
+From: me@aglishlabs.email
+Subject: Legitymate Test - spf - proton - 20251122T2025_spf
+Message-Id: <20251122202732.1249934@pop-os>
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjGEVRQVVMsICVmIs1NjX
+ 3l3JbIpj7SBlI0TiQ0yOiiCwNUJFPQ9FRkUEVNUSUOU9SIojwSJCLyU6IIuLTsjMMI9lk1JWZ1Zp9Z
+ vbm7jpIIBlSiQ0TnOis1haWf2VZbFmt6ISZmIzhFjdGm19aa5Wl1R3XmbkVB1X3wzIXMUjxwMDMiIi
+ wFpbWzF8bcJHfk9WbWZiwJtOisWlYMB3yy0SLDM1IkxMDwi5MdICsh1mIWafxByM3y3BXbI2iuAjOD
+ MzAQ3OTwDAMMED5yUjMyMiwFpbWjF9bYRXly92ZVet9Rlb26CIbI1mhjxWaXYtQIwLTwjUMOETy0Bn
+ LiIiwFpbWjF9bYRXly92ZVeu91lYWijoIRVEGMVVQCVsI1hImfWxaYF20vdWZncflJvcH6iIYM4C0z
+ UzNjM5YUxOD3jAMNMzzwJCL3XwN0iYWujAOMID25EjNDNxQA3ODwjcMMUDsfBnI3chB9ibVlXNYIoj
+ wyAjLjNxYQ0OTwTgMNIz31ADMCLwJN3X3jXRaa9F0w91bGazlluaG6yIZM4CwxgDMDN5kg0MjzTMMM
+ Ez1skDMnI1J9ubllW1YIoji0F2d2YshN0aXlXNLbRmlw1icVdz9l0d2i2gYf1X9zJCLmckloiIjyjk
+ NMFjjmdjYDNxIE0MWimNNMEm3lRzNnI91
+X-Pm-Origin: external
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Spamscore: 0
+X-Pm-Spam-Action: inbox
+Mime-Version: 1.0
+Content-Type: text/plain
+
+
+-----BEGIN PGP MESSAGE-----
+Version: ProtonMail
+
+wV4D1TfTe8J4bLMSAQdArfD3bauogNNkxNjPJQqWU+jD8xIG5eAESQh1U7/a
+4jcwVTHZd4xoA1jsFY1FLw7VWMp3ki17fI7sLuVeEZWGDw2XLx+r0c1DlRjP
+I1eH0yHa0sAcAb8yezRYkD9DI4CtUwgFGkfY6L191kC1jXk0AZPXDgQTqzfZ
+8EAhquBOlxBiDZJVhFkNd19NN9My7qV7BPP2ORt4+1Sm99rV8viG3ap3xIGQ
+e5A+9drxyhHC1m4baQNWJEUDuOHXiz/eVfLIplIeY9BjnfCAY9obLUbM1R+w
+MmAjQf9Ika+NM2EqLhMzbcLTVmgiec4HEXvZfGtYxPy9xDvy56/Zb3InuB7D
+k6VzJnQa4l3MxR4vI9Xl2pzGDkE8n/NNEpXeegCVxNYZM26yAS7DmswNp+pd
+KhUUqw==
+=oE3n
+-----END PGP MESSAGE-----

@@ -1,0 +1,91 @@
+Domain,Website Status,SPF,DKIM,DMARC
+allaboutsales.ie,Live (HTTP),v=spf1 +a +mx +ip4:35.214.168.178  include:allaboutsales.ie.spf.auto.dnssmarthost.net ~all,allaboutsales.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_8d4cf15d648ca94426c1c1d242b1948c.dkim.dnssmarthost.net.v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDke0AD1CqC4B9kY5bDLuCwOuNTStUDf1DRAChS5EEKuwvZAM36KsmFwve5448Edi/5+ya2sFoSYDD+YpPnZ9VyfGY14rl5CaKe1CExcsfKu/xr7AVU2YptuGnXShb/u3eg09weFIv9wI0RVKYlb1lV+prr5bzz+JMQGeTMxDw++wIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+avenir.ie,Live (HTTP),v=spf1 include:_spf.google.com include:eu-sender.zohobooks.com include:_spf.elasticemail.com ~all,Not found,v=DMARC1; p=none;
+blueproperty.ie,Live (HTTP),v=spf1 +a +mx +ip4:35.214.220.180  include:blueproperty.ie.spf.auto.dnssmarthost.net ~all,blueproperty.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_6e3c93a4b9989c4c3d0dae082585f06f.dkim.dnssmarthost.net.v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJQtaYVaH4fm+vHPM6+ZByet6it1nwh47LxAUY7X31lFuQ4ViLtStx+OVA6OU+kVW6TjeROg988KXB2THYTKnLPWHL7dVVYXLMJwVBwxyW/EJQ7q1K5QogOwZuBEgDhFloEAJV5feLg+ZaUZHCcx9IsvfBnRob6vhT0I1WoS49IQIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+conlontalentdevelopment.ie,Live (HTTP),v=spf1 +a +mx +ip4:35.214.246.90  include:conlontalentdevelopment.ie.spf.auto.dnssmarthost.net ~all,conlontalentdevelopment.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_bccd49090345947350b6c97ba2e4d442.dkim.dnssmarthost.net.v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO4HpStpNByyHH8CYtstG0x/fUh4ByXBezN7SnF9bXOTPnYBOZNS261nNIm7dDo4h0wijj87TsSyimHRBiMQ4qeAkIYB7CdkuJM16zsuDqirK0CQSMlBD3BrnpmCClv+BFPSwDy6cLlc82o9B1RnGKN1D75Dmq23SDhqk1uE/GlQIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+con-telegraph.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,v=DMARC1; p=none;
+albany.ie,Live (HTTPS),v=spf1 mx a ptr a:mail1.iemx.net,Not found,Not found
+pamex.ie,Live (HTTPS),v=spf1 include:spf.protection.outlook.com include:amazonses.com -all,Not found,Not found
+stauntons.ie,Live (HTTP),v=spf1 a mx a:vms1.getonline.ie ~all,Not found,v=DMARC1; p=none
+sobrienbuilders.ie,Live (HTTP),v=spf1 +a +mx include:sobrienbuilders.ie.spf.auto.dnssmarthost.net ~all,sobrienbuilders.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_f83252025a491454d0963467886f19ec.dkim.dnssmarthost.net.v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKLNesZH9bUyLkF5r+hRU5SkV+XZI+Lo6T/d+hPIQ+nGE3wjfhuQ5903UYv37zogoE5ewqXKcVAPOnJc7rnJsXVST1sVP3MKNg6PKb5GpWRe6ZfqnhWF4L7FHqPwr6SK+jNMcN8e/V9JNhJ3jz5Mde2Eg9DyTvfriHwlY+L50yVQIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+theellisonhotel.ie,Live (HTTPS),v=spf1 include:spf.protection.outlook.com include:netaffinity.net ~all,Not found,v=DMARC1; p=none;
+vaughanshoes.ie,Live (HTTP),v=spf1 include:_spf.google.com include:amazonses.com ~all,Not found,v=DMARC1; p=none
+breaffyhouseresort.com,Live (HTTPS),v=spf1 include:spf.premiersoftware.co.uk include:sendgrid.net include:spf.protection.outlook.com include:netaffinity.net include:authsmtp.com ip4:52.166.124.85 ip4:13.95.238.103 ip4:13.95.235.106 ip4:13.95.233.171 ip4:52.233.191.178 ip4:13.95.236.16  ip4:13.95.238.208 ip4:13.95.233.20 -all,Not found,v=DMARC1; p=none;
+insidecastlebar.ie,Live (HTTP),Not found,Not found,Not found
+firstchoicecreditunion.ie,Live (HTTP),v=spf1 include:amazonses.com include:spf.protection.outlook.com include:spf.mandrillapp.com -all,Not found,v=DMARC1; p=none; rua=mailto:5cfa7b3464db.a@dmarcinput.com; ruf=mailto:5cfa7b3464db.f@dmarcinput.com; fo=1
+dng.ie,Live (HTTP),v=spf1 include:_spf.google.com ~all,Not found,v=DMARC1; p=none; rua=mailto:itsupport@dng.ie
+cleaningcorporation.ie,Live (HTTP),v=spf1 mx a include:spf.elive.net ~all,v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiG1mFEAsVr1Bp7+OAuJW0xIPTZd6u3npoMkuhhZ5N4iXsK+uEAfLKEsyTwTAVySPx7nVOq9QJasM+j6RVTm/oaIhgIgLam3ERO80dE/iArsFcVW7JUiFICF57Y+aTe5a4qWGYwYZHcdHuozHw9N3xfPmLN5jDXpVaVKWU71UWnwIDAQAB;,v=DMARC1; p=quarantine; pct=100; fo=1; ri=3600;
+murrayambulance.ie,Live (HTTPS),v=spf1 a include:spf.blacknight.ie  ~all,Not found,Not found
+crcfm.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,Not found
+mcdermotts.ie,Live (HTTP),v=spf1 ip4:93.107.50.145 include:mxlogin.com include:mcdermotts.ie.spf.auto.dnssmarthost.net -all,Not found,v=DMARC1; p=none; aspf=r; adkim=r;
+almuretto-castlebar.com,Live (HTTP),Not found,Not found,Not found
+envetec.com,Live (HTTPS),v=spf1 include:spf.protection.outlook.com -all,Not found,v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-rua@envetec.com;ruf=mailto:dmarc-rua@envetec.com
+littletreasurescreche.ie,Live (HTTP),Not found,Not found,Not found
+tfhotel.ie,Live (HTTP),Not found,Not found,Not found
+egansjewellers.ie,Live (HTTP),v=spf1 include:spf.reg365.net ~all,Not found,Not found
+fwmetals.com,Live (HTTP),v=spf1 mx a:exchange.fwmetals.com a:mail.fwmetals.com a:router.fwmetals.com include:spf.protection.outlook.com include:dnsma.accellion.com include:dnsus1.accellion.com include:dnsus2.accellion.com include:aspmx.pardot.com include:_spf.salesforce.com inclu de:_spf.psm.knowbe4.com -all,Not found,v=DMARC1;  p=none; rua=mailto:a5fc4285a66b4bd09e42313761f54088@dmarc-reports.cloudflare.net
+mayotraininginstitute.ie,Live (HTTP),v=spf1 a include:spf.blacknight.ie ~allv=spf1 a mx +ip4:157.90.28.58 include:spf.blacknight.ie ~all,Not found,Not found
+hroncall.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,Not found
+digitaldoors.ie,Live (HTTP),v=spf1 include:spf.titan.email ~all,Not found,v=DMARC1;p=none;sp=none;adkim=r;aspf=r;pct=100
+rowlandspharmacy.ie,Live (HTTP),v=spf1 a include:spf.blacknight.ie  ~all,Not found,Not found
+mayoleisurepoint.ie,Live (HTTPS),v=spf1 mx a ptr a:mail.iemx.net,Not found,Not found
+employabilitymayo.ie,Live (HTTP),v=spf1 include:spf.reg365.net ~all,Not found,Not found
+jacksonengineers.com,Live (HTTP),v=spf1 a mx ip4:173.249.12.29 include:_spf.google.com ~all,Not found,v=DMARC1; p=none; rua=mailto:admin@getonline.ie;
+elverys.ie,Live (HTTP),v=spf1 a mx ip4:185.57.113.74 ip4:82.141.205.1 ip4:62.209.54.82 ip4:62.209.54.83 ip4:62.209.54.84 include:spf.mailanyone.net include:spf.mandrillapp.com include:mail.zendesk.com include:spf.protection.outlook.com include:spf.givex.com -all,Not found,v=DMARC1; p=none; rua=mailto:dmarcreports@elverys.ie
+apmsecurities.ie,Live (HTTPS),v=spf1 ip4:185.43.232.236 +mx +a +ip4:78.137.164.58 +include:spf.antispamcloud.com ~all,v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Ed7wSB7FL4Y4NEPuvZn+1cdk0ms8idldTTY/PWzz1y2dnwLufM6Cc7mT1e/LOJ8eclQSRCfk1Hxcerfl3mV+wxUU4M565N/QzLw7nMGDbCinUoeHbjFJfiUK7k1clrI6RsGqa+61pPQiGNLI93hhsmACh1v9Sauofw27LCZKphs4jF7MUqCGNhmnnAYs0GSs,Not found
+atuihubs.ie,Live (HTTP),Not found,Not found,Not found
+bronntanas.ie,Live (HTTP),Not found,Not found,Not found
+horkans.ie,Live (HTTP),v=spf1 include:_spf.google.com include:spf.deltablue.cloud include:amazonses.com ~all,Not found,V=DMARC1; p=none; rua=mailto:emarketing@horkans.com
+macauliffes.com,Live (HTTP),v=spf1 ip4:46.22.138.11/32 ip4:144.76.75.138/32 ip4:144.76.75.187/32 +a +mx +a:th.dmacmedia.ie -all,Not found,Not found
+theplanningpartnership.ie,No response,v=spf1 include:spf.protection.outlook.com include:spf.reg365.net -all,Not found,v=DMARC1; p=quarantine; rua=mailto:postmaster@theplanningpartnership.ie; ruf=mailto:info@theplanningpartnership.ie; sp=none; aspf=r;
+flannellyauctioneers.com,Live (HTTP),v=spf1 include:secureserver.net include:sendgrid.net +ip4:144.2.243.138 include:_spf.google.com ~all,Not found,v=DMARC1; p=reject;
+teamhorizon.ie,Live (HTTP),v=spf1 +a +mx ip4:217.78.11.55 include:_spf.bullhornmail.com include:spf.protection.outlook.com -all,Not found,v=DMARC1; p=none;
+elasansolutions.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,elasansolutions.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_dee87d330ebdba32bcfbd0c887feff24.dkim.dnssmarthost.net.v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCXiACwKycNsySoi03Wi9XoBePR01+23eLLxrCPNejwLCRWd7WLmq6ahvah450KiWSwi9yHTb7lIV60Nuw9EmvUJLu/O9KhlOqB8Q+zH8p9K/Z0eTGrJGzmWDRqQKwidMNaODhnv36LFQ+0/QQYoV3AS+rsrrowN2tWUD1c9LvrIQIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+moranauctioneers.com,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:servers.mcsv.net -all,Not found,Not found
+carraigdonn.com,Live (HTTP),v=spf1 include:shops.shopify.com include:spf.protection.outlook.com ~all,Not found,v=DMARC1;p=quarantine;pct=100;rua=mailto:reporting@carraigdonn.com;ruf=mailto:reporting@carraigdonn.com;ri=86400;fo=1
+bridgest.ie,Live (HTTP),v=spf1 include:squarespace-mail.com ~all,Not found,v=DMARC1; p=none
+supermacs.ie,Live (HTTP),v=spf1 a: ip4:92.51.192.114 include:spf.protection.outlook.com include:spf.mailjet.com -all,Not found,v=DMARC1; p=quarantine; rua=mailto:8b3700aba2aa640@rep.dmarcanalyzer.com; ruf=mailto:8b3700aba2aa640@for.dmarcanalyzer.com; fo=1;
+itworx.shop,Live (HTTPS),Not found,Not found,Not found
+jvgeary.ie,Live (HTTP),v=spf1 +a +mx +ip4:109.123.112.75 include:spf.protection.outlook.com -all,Not found,v=DMARC1;p=reject;sp=reject;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:abuse@jvgeary.ie
+gintax.ie,Live (HTTP),v=spf1 +a +mx +ip4:91.210.235.105 include:spf.webhostingireland.ie include:spf.protection.outlook.com ~all,v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA482FvgW1hw8yJn6MGczXmAVLhpc3B2LtVeVD4GpcZEpUitFYkNxtiEcbwAvzUe6SYTCx5h9hhjg6Tv/eAqEJ9c/HbFLl3TF/tfuDsW0EoaKm7q5kw8bxoS9YK8VvGVe8mnLp2OcDaVc87VGPVO3SDDOEMibDrt+3z+YdCzLVLiMoVZSHplHbUb4+Gzcd6hPAr zEMhz5bqzUYzohhsjxxysUDMpV0fXTVM+5CmrGiIsFd0IvGnxa3XtUVmKMnE6z0G/mryvfuxsSW3HaeeJQ2phCEAEn/tm8yWELqk8d5AIaAaWEf8mjwgGyTlPAEkFBUb+6FD81SgGcB22aPoO6hOwIDAQAB;,Not found
+thebarrelandcastle.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,Not found
+hopscotchkids.ie,Live (HTTP),v=spf1 +a +mx +ip4:109.123.121.21 ~all,Not found,Not found
+caferua.com,Live (HTTPS),v=spf1 include:spf.protection.outlook.com include:spf-eu.emailsignatures365.com -all,Not found,v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@caferua.com; ruf=mailto:dmarc-failures@caferua.com; fo=1; pct=100
+alisonlaredo.com,Live (HTTP),Not found,Not found,Not found
+okcastlebar.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,\v=DMARC1; p=none; rua=mailto:paul@twenty20it.com; fo=1\
+allaffairshire.com,Live (HTTP),Not found,Not found,Not found
+westnet.ie,Live (HTTP),v=spf1 include:_spf.google.com include:amazonses.com ip4:88.81.100.0/24 ip6:2a02:3d8::2/64 a ~all,Not found,v=DMARC1;p=quarantine;rua=mailto:dmarc@80uf3s25.uriports.com;ruf=mailto:dmarc@80uf3s25.uriports.com
+marmar.ie,Live (HTTP),Not found,Not found,Not found
+sportlomo.com,Live (HTTP),v=spf1 include:_spf.google.com include:mail.zendesk.com ~all,d3dwou2l766e3c.cloudfront.net.,v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@sportlomo.com
+inovarecruitment.ie,Live (HTTP),v=spf1 include:spf.titan.email include:_spf.wpcloud.com include:spf.protection.outlook.com ~all,inovarecruitment.ie.MS=ms60825216v=spf1 include:spf.titan.email include:_spf.wpcloud.com include:spf.protection.outlook.com ~all,v=DMARC1;p=none;sp=none;adkim=r;aspf=r;pct=100
+allpawsvethospital.ie,Live (HTTP),v=spf1 include:_spf.google.com ~all,Not found,_dmarc.wixemails.com.v=DMARC1; p=none; rua=mailto:dmarc_agg@vali.email
+duffystainless.com,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:_spf.elasticemail.com +a +mx +ip4:78.141.210.139 ~all,Not found,v=DMARC1; p=none;
+taylormccarney.ie,Live (HTTP),v=spf1 include:elasticemail.com include:spf.protection.outlook.com -all,Not found,v=DMARC1; p=none;
+halston.ie,No response,Not found,Not found,Not found
+gleeson-design.com,Live (HTTP),v=spf1 include:_spf.google.com ~all,Not found,Not found
+castledavittfurniture.ie,Live (HTTP),Not found,Not found,v=DMARC1; p=none; rua=mailto:newsletter@castledavittfurniture.ie; adkim=r; aspf=r
+allindesign.ie,Live (HTTP),v=spf1 mx a ptr a:mail.iemx.net,Not found,Not found
+diningroomcastlebar.com,Live (HTTP),Not found,Not found,Not found
+mannionsparts.ie,Live (HTTP),Not found,Not found,Not found
+lavinsfruitandveg.com,Live (HTTP),v=spf1 ip4:185.43.232.219 ip4:78.137.164.69 a mx include:spf.antispamcloud.com include:spf.protection.outlook.com ~all,v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAumStAVA11+jWO6pMQHl4etX5XbpAPS6QQhmPv2Gr7ymg0wm7rTYSV5KkDi0xptRR19VrRnB8UT3gng1G4ddkRc9maj0BJ6ZcQFsnaneDfyDbjqVvH0GrvmZjxAo6b0EAzbJJkEe6NPbJlZGQ+V80MH2bowd891yVry7jUrObmfH4ja1bn69UeBmnOYfoLswOt ORprMQzjkfnhaJRjcv3KX8COO3xogD9MSOLbbtIX13sGglpInnnrp0vWkJoElTpYz8cfPWpYriJnt8Rj3V1wnR80SnSDw+mxSrrcsdqFaDUnL4HdNkzPxC1tmfgxlN56JI/ebOR9cgAaOqcl2fznQIDAQAB;,Not found
+johntiernan.ie,Live (HTTP),v=spf1 a include:spf.blacknight.ie  ~all,Not found,Not found
+atlanticcare.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:atlanticcare.ie.spf.auto.dnssmarthost.net -all,Not found,v=DMARC1; p=none; aspf=r; adkim=r;
+enginere.ie,Live (HTTPS),v=spf1 a include:spf.blacknight.ie  ~all,Not found,Not found
+thewinegrove.ie,Live (HTTP),v=spf1 include:spf.reg365.net ~all,Not found,Not found
+masterdesign.ie,Live (HTTP),v=spf1 +a +mx include:masterdesign.ie.spf.auto.dnssmarthost.net ~all,masterdesign.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_ccad29ba0afbb8784fe32d684eb1ca1d.dkim.dnssmarthost.net.v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDj0U5uFoli6O0ukWmH9xmbs9LL0cqwUQRC8oU5qCarJXQW1QeLisQ8w5hGCbM1WaCa4ByvtKWHai4vjXMtkEcxEimVtsGtNUVwolzAx7slQwu4CVDQeNsdFpk7bHged5uGUvxmd+GL7T6WJjAdCbSYX/hi2JGHM6enr54NVs+bKwIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+sheenaoosten.com,Live (HTTP),v=spf1 a mx include:_spf.google.com  ~all,Not found,Not found
+bctransport.ie,Live (HTTPS),v=spf1 include:spf.protection.outlook.com include:remote.bctransport.ie include:spf.bctransport.ie -all,Not found,Not found
+westportwolfhounds.ie,Live (HTTP),Not found,Not found,Not found
+hastings.ie,Live (HTTP),v=spf1 include:spf.hastings.ie include:spf.protection.outlook.com include:appliedexch.co.uk include:27003876.spf10.hubspotemail.net -all,Not found,v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc@zenotec.ie; ruf=mailto:dmarc@zenotec.ie; fo=1 v=DMARC1; p=none;
+ballintubberabbey.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:_spf.mlsend.com include:mailgun.org -all,Not found,Not found
+hurst.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com -all,Not found,v=DMARC1; p=none; rua=mailto:paul@twenty20it.com; fo=1
+westporthouse.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:eu._netblocks.mimecast.com include:servers.mcsv.net include:144028670.spf10.hubspotemail.net -all,Not found,v=DMARC1; pct=100; p=none; adkim=r; aspf=r; rua=mailto:rua@dmarc.brevo.com
+edwardconway.ie,Live (HTTP),v=spf1 a mx a:mail1.iemx.net ip4:86.47.224.213  ~all,Not found,Not found
+the-pizza-bros.com,Live (HTTP),Not found,Not found,Not found
+vantive.com,Live (HTTP),v=spf1 exists:%{i}._i.%{d}._d.espf.agari-dns.net include:%{d}.c4.spf-protect.agari-dns.net -all,Not found,_dmarc.d8.66.bd.2a.dns.agari.com.v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:baxter-international@rua.agari.com; ruf=mailto:baxter-international@ruf.agari.com
+houseofplates.ie,Live (HTTP),v=spf1 +a +mx include:houseofplates.ie.spf.auto.dnssmarthost.net ~all,houseofplates.ie.default.dkim.auto.dnssmarthost.net.default._domainkey_e0790c57e35077c5961c28ba15c28906.dkim.dnssmarthost.net.v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDxD4z7CcaDhnhcUDlCRLCeDGFaHd7613GeIpdpdokUeRSQW2kwdve0YFPfGFFIpQuqEPY6kVJzZGO7gxO+vyIYlUCnCpJlkpS8S/RfML4hlJav61Rf9d9But0B5zks1J+Bi7Mo49bBSsGDQcnwpR7OinDckp11GZgeWkGOCiwKpwIDAQAB;,v=DMARC1; p=none; aspf=r; adkim=r;
+mdperformancetherapy.com,Live (HTTP),Not found,Not found,Not found
+nyrahbeauty.com,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:shops.shopify.com include:u22772007.wl008.sendgrid.net include:_spf.google.com ~all,Not found,v=DMARC1; p=quarantine; rua=mailto:store@nyrahbeauty.com; ruf=mailto:store@nyrahbeauty.com; pct=50;
+pmcdaccountancy.ie,Live (HTTP),v=spf1 include:emailsrvr.com include:_spf.elasticemail.com ~all,Not found,v=DMARC1; p=none;
+teqnoco.com,Live (HTTP),v=spf1 include:mx.ovh.com ~all,Not found,Not found
+sagewellbeing.ie,Live (HTTP),v=spf1 include:spf.protection.outlook.com include:spf.stackmail.com include:mailgun.org -all,Not found,Not found

@@ -1,0 +1,62 @@
+Received: from 127.0.0.1
+ by atlas-production.v2-mail-prod1-gq1.omega.yahoo.com pod-id atlas--production-gq1-76fd96d49-l8skg.gq1.yahoo.com with HTTP; Sun, 23 Nov 2025 09:40:26 +0000
+Return-Path: <me@aglishlabs.email>
+X-Originating-Ip: [185.17.255.13]
+Received-SPF: none (domain of aglishlabs.email does not designate permitted sender hosts)
+Authentication-Results: atlas-production.v2-mail-prod1-gq1.omega.yahoo.com;
+ dkim=pass header.i=@aglishlabs.email header.s=mail arc_overridden_status=NOT_OVERRIDDEN;
+ spf=none smtp.mailfrom=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+ dmarc=unknown header.from=aglishlabs.email arc_overridden_status=NOT_OVERRIDDEN;
+X-Apparently-To: aglishlabs_msc@yahoo.com; Sun, 23 Nov 2025 09:40:27 +0000
+X-YMailISG: n1NkzLwWLDvdTdh.2WZb23zL1KBc0cZvVwS9GoHljBuhKC86
+ YscbKnKjqSYB6pCXvL_8z5hjuFFyedpcrmcfn2gwrTa_LMaccUXgYsdt5Bjq
+ o_QRZf6ZO7V9Fgy5_1D2VHZRRTuU7xR8q7knfyEgux45Y9RcZ9MbvyNBn.o_
+ Kcy7JoiKm72EwRoKxeWNecO1TOR6_nES6iB6mJI65Z4XHGuWKV.Qz_2dKjc7
+ iZafCzqOziJMp.7Y0GIt7dnnyF_9_5IYr.9HPxkg3uvXkrRFZAVGylrkX2tI
+ mHDhLbtVOLiFC2rRznWGs2MFEAnuJBpHZtcRl0ksT9Qt6vQxBtpNV5dd9imG
+ KR7E05grzt1PkTjs4yx3xJ0oRHH6ryfXC.FD2F_u.lvxQZsGpwceh5E2WWIE
+ w.8i1CV9uPc9sWgN7B95j5tmpEpCQL.iRnz2yJDrMI4w.iVhj9iByXP11GpX
+ BJEWl6ThI0U4B5_l93jbQ_cvAanSElwbzgUDnOP5DovMljwUaIJOHLQVfzgr
+ gPOSE5tTG9Q7kkWK3CqR4ZG8O8xOQmLZ7fgHVgUWXveGFAoK0w4CPy0iERos
+ 5qoG41hz5air_82lTswAfVM9J8o.x0lLPOCgd8D_k2oaYy_SkTMsP.6PooOk
+ UlyAiXO6w.1GEfMvoDvus.qdqU7ivWv4KRObVJFxjkB8JHua3t9II94zxmte
+ VRmBGScaCP4IdVoFDaXAMVdXmc6q7rpkorvPEmNUn14uTl883T3vwov3gJ_G
+ TxJnl8U2a.EE2ZMUrIl66I.si7vb1DoQVQdgn86qDOG1WCEcw8y2KDx3m8SA
+ 1emlyfynQUnBF5mDdiQvnJGzk9unLIxDBu_8SbV.qxwz8QBJYlqUmHLvRSn2
+ h2n1OW60ze9dpOhe1MGiqgs28Q2MjABUeTpLYPDldlGoHIxiXrJoEnmXiD3y
+ 3guO.U0tfbB4vVJ.7AFVFBr6fVkZb1lJU9tT3UD2LPA7fdZv7vYr2ID02Jli
+ w.7fEE6aIvtipuy8jDoFQrzBSzAAJrAWVEvF5NMiX_eoFuVRjLq5hqCpQ7QE
+ R6.0Nns077d49VGOUt8uFdEurxeUpsmeOkZUgm14
+Received: from 185.17.255.13 (EHLO box.aglishlabs.email)
+ by 10.253.233.91 with SMTPs
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256);
+ Sun, 23 Nov 2025 09:40:26 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=aglishlabs.email;
+	s=mail; t=1763890825;
+	bh=ptyrpjmbcKLmpqFOO8rM/0sccVzVmVaOgPmcu5r/rRg=;
+	h=Date:To:From:Subject:From;
+	b=K04+DG1mDjZmK8uBDj2RX8fRmoV8N4IGR3CsPmkXXq3rDjtczD9hyfAfr3jvHO4h2
+	 /5gwbiAAgTA3udwXmlYpcZ+byB8fPX51uEGoJPOxeOvnSZrnrVVKdvrFjsZynwZgoC
+	 9VTLjB1Ccuic9P65IFk9eaCQEH+mGOBdDp4PFSaFrrJp21mZplLjJTgB5MeQBhrEdS
+	 odDDQVrjIPuI2zSLpdmrLSxjnBF6PjFZf6XbeoGGVW0LABDdCOLQLcaJKC1eMdD7mz
+	 CcbVjXERoovwGoY9Ogu/lLcf+Cb4I5XzZAANpxPxMbM0VlsT9cWDmRet4B+BWKP+Mp
+	 c1+394UdXvkvg==
+Received: from authenticated-user (box.aglishlabs.email [185.17.255.13])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by box.aglishlabs.email (Postfix) with ESMTPSA id 5DFE7CBD
+	for <aglishlabs_msc@yahoo.com>; Sun, 23 Nov 2025 09:40:25 +0000 (GMT)
+Date: Sun, 23 Nov 2025 09:40:24 +0000
+To: aglishlabs_msc@yahoo.com
+From: me@aglishlabs.email
+Subject: Legitymate Test - dkim - yahoo - 20251123T0939_dkim
+Message-Id: <20251123094024.1260151@pop-os>
+Content-Length: 197
+
+Hi,
+Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?
+If that time or place does not suit, let me know what works better for you.
+Thanks,
+John
+

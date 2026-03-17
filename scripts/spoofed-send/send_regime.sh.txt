@@ -1,0 +1,69 @@
+#!/bin/sh
+
+# Usage: ./send_regime.sh <recipient_alias> "<regime text>"
+# Example:
+#   ./send_regime.sh gmail "regime none"
+#   ./send_regime.sh yahoo "regime dmarc-reject"
+
+RECIPIENT_ALIAS="$1"
+REGIME="$2"
+
+if [ -z "$RECIPIENT_ALIAS" ] || [ -z "$REGIME" ]; then
+  echo "Usage: $0 <recipient_alias> \"<regime text>\""
+  echo "Recipient aliases: gmail, hotmail, yahoo, mailru, proton, titan, 25mailst"
+  exit 1
+fi
+
+case "$RECIPIENT_ALIAS" in
+  gmail)
+    RCPT="aglishlabs.msc@gmail.com"
+    ;;
+  hotmail)
+    RCPT="aglishlabs_msc@hotmail.com"
+    ;;
+  yahoo)
+    RCPT="aglishlabs_msc@yahoo.com"
+    ;;
+  mailru)
+    RCPT="aglishlabs_msc@mail.ru"
+    ;;
+  proton)
+    RCPT="aglishlabs_msc@proton.me"
+    ;;
+  titan)
+    RCPT="msc@dmarclabs.eu"
+    ;;
+  25mailst)
+    RCPT="msc@dmarclabs.org"
+    ;;
+  *)
+    echo "Unknown recipient alias: $RECIPIENT_ALIAS"
+    echo "Use one of: gmail, hotmail, yahoo, mailru, proton, titan, 25mailst"
+    exit 1
+    ;;
+esac
+
+
+{
+  sleep 1
+  echo "ehlo aglishlabs.email"
+  sleep 1
+  echo "mail from: me@aglishlabs.email"
+  sleep 1
+  echo "rcpt to: $RCPT"
+  sleep 1
+  echo "data"
+  sleep 1
+echo "Subject: Meeting in Castlebar tomorrow for $REGIME"
+  echo "Hi,"
+  echo ""
+  echo "Just a quick note to confirm our meeting in Castlebar tomorrow. Shall we say 10:00 on Spencer Street?"
+  echo ""
+  echo "If that time or place doesn't suit, let me know what works better for you."
+  echo ""
+  echo "Thanks,"
+  echo "John"
+  echo "."
+  sleep 1
+  echo "quit"
+} | telnet localhost 25
