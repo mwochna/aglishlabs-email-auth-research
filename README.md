@@ -92,10 +92,8 @@ Proton Mail · Blacknight Titan (dmarclabs.eu) · 25 Mail St. (dmarclabs.org)
 
 ## Domain Datasets
 
-Five datasets were used for DNS measurement. Raw domain lists are not 
-published to avoid creating a targeting resource. Aggregate adoption 
-figures and methodology are documented in `/domain-lists/README.md` 
-and in the full dissertation.
+Five datasets were used for DNS measurement. Full results including 
+per-domain SPF and DMARC outcomes are published in `/domain-lists/`.
 
 | Dataset | n | Source |
 |---------|---|--------|
@@ -104,6 +102,9 @@ and in the full dissertation.
 | DomainTyper Top .ie | 1,000 | domaintyper.com |
 | Castlebar Chamber of Commerce | 90 | Chamber membership register |
 | Westport Chamber of Commerce | 93 | Chamber membership register |
+
+All domains are publicly registered. DNS records are public information. 
+No personal data is included in the published datasets.
 
 ---
 
