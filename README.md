@@ -20,7 +20,7 @@ The study comprised two artefacts:
 1. A DNS measurement framework scanning SPF and DMARC records across four 
    Irish domain datasets
 2. A controlled email delivery testbed built on self-hosted Mail-in-a-Box 
-   infrastructure, transmitting 750 legitimate and spoofed messages with 
+   infrastructure, transmitting 500 legitimate and spoofed messages with 
    full email header capture
 
 ---
