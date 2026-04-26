@@ -2,8 +2,8 @@
 
 Research tooling, email headers, and analysis data supporting the MSc dissertation:
 
-**"Email Authentication Adoption and Spoofing Resistance Among Irish SME Domains: 
-A DNS Measurement and Controlled Receiver Study"**
+**"Email Authentication and Spoofing Resistance 
+in Irish SMEs: A DNS Measurement Study"**
 
 Atlantic Technological University (ATU) Donegal, 2026
 
@@ -123,8 +123,7 @@ was conducted under ATU Donegal research ethics guidelines.
 If you use this tooling or data in your own research, please cite:
 
 > Wochna, M. (2026). *aglishlabs-email-auth-research: Tooling and data 
-> for "Email Authentication Adoption and Spoofing Resistance Among Irish 
-> SME Domains."* GitHub. 
+> for "Email Authentication and Spoofing Resistance in Irish SMEs: A DNS Measurement Study"* GitHub. 
 > https://github.com/mwochna/aglishlabs-email-auth-research
 
 ---
